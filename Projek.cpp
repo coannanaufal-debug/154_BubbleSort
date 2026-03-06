@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int arr[20];
+int a[20];
 int n;
 
 void input()
 {
-    int d;
     while (true)
     {
-        cout << "masukkan banyaknya elemn dalam array : ";
+        cout << "masukkan panjang array : ";
         cin >> n;
 
         if (n <= 20)
@@ -23,13 +22,13 @@ void input()
     }
 
      cout << endl;
-    cout << "===================" << endl;
+    cout << "====================" << endl;
     cout << "Masukkan Elemen Array" << endl;
-    cout << "===================" << endl;
+    cout << "====================" << endl;
 
       for (int i = 0; i < n; i++)
     {
-    cout << "Masukkan Nilai ke- " << i + 1 << ": ";
+    cout << "Masukkan Nilai ke- " << i + 1 << " : ";
     cin >> a[i];
     }
 }
@@ -51,7 +50,7 @@ void bubleSort()
 {
     cout << "\n===============================" << endl;
     cout << "Hasil setiap Pass" << endl;
-    cout << "===============================" << endl;\
+    cout << "===============================" << endl;
     for (int pass = 1; pass <n; pass++)
     {
         for (int j = 0; j <= n - 1 - pass; j++)
@@ -68,7 +67,7 @@ void bubleSort()
         cout << "Pass ke - " << pass << ":\t";
         for (int k = 0; k < n; k++)
         {
-            cout << arr[k] << "\t ";
+            cout << a[k] << "\t ";
         }
         cout << endl;
     }
